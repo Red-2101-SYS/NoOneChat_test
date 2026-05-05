@@ -1,11 +1,16 @@
+import { Chat } from "../componentsweb/Chat/Chat"    
+import { Sidebar } from "../componentsweb/Sidebar/Sidebar"
 import '/src/App.css'
 
-const App = () => {
-  return (
-    <div>
-      <h1>Hello World !</h1>
-    </div>
-  )
-}
+ 
 
-export default App
+export const App = () => {
+    return (
+        <div>
+            <h1>No One Chat</h1>
+            <Sidebar />    
+            <div style={{ marginLeft: '250px', display: 'flex', flex: 1 }}></div>       
+            <Chat />
+        </div>
+    )
+}
