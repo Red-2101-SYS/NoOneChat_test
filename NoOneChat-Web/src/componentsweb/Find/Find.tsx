@@ -1,5 +1,4 @@
-import { useState } from 'react'
-import styles from './Find.module.css'
+
 
 type Props ={
     value: string
