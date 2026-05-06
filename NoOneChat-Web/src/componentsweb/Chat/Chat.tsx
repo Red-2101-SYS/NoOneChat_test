@@ -1,6 +1,7 @@
 import { useState } from 'react'
 import styles from './Chat.module.css'
 
+
 export const Chat = () => {
     const [messages, setMessages] = useState([
         { id: 1, text: 'Привет!', sent: false, time: '10:00' },
@@ -27,7 +28,6 @@ export const Chat = () => {
             sendMessage()
         }
     }
-
     return (
         <div className={styles.chat}>
             <div className={styles.header}>
@@ -57,5 +57,6 @@ export const Chat = () => {
                 </button>
             </div>
         </div>
+    
     )
 }
